@@ -1,0 +1,10 @@
+
+
+{
+  "name": "DummyPlugin",
+  "version": "1.0.0",
+  "entry": "DummyPlugin.js", 
+  "globalRenderName": "renderMyPlugin",
+  "unmountName": "unmountMyPlugin",
+  "description": "Dummy Plugin"
+}
