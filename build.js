@@ -93,8 +93,8 @@ try {
     minify: true,
     sourcemap: true,
     format: "iife",
-    outfile: path.join(__dirname, "dist/TimesheetOverviewPlugin.js"),
-    globalName: "TimesheetOverviewPlugin",
+    outfile: path.join(__dirname, "dist/ProjectSprint.js"),
+    globalName: "ProjectSprint",
     loader: {
       ".jsx": "jsx"
     },
@@ -105,7 +105,7 @@ try {
   });
 
   const bundleSize = fs.statSync(
-    path.join(__dirname, "dist/TimesheetOverviewPlugin.js")
+    path.join(__dirname, "dist/ProjectSprint.js")
   ).size;
 
   console.log("✅ Build Complete");

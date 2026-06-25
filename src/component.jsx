@@ -35,6 +35,6 @@ export function unmount(root) {
   }
 }
 
-window.renderMyPlugin = render;
-window.unmountMyPlugin = unmount;
+window.renderProjectSprint = render;
+window.unmountProjectSprint = unmount;
 

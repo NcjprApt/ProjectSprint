@@ -4,7 +4,7 @@
   "name": "DummyPlugin",
   "version": "1.0.0",
   "entry": "DummyPlugin.js", 
-  "globalRenderName": "renderMyPlugin",
-  "unmountName": "unmountMyPlugin",
+  "globalRenderName": "renderProjectSprint",
+  "unmountName": "unmountProjectSprint",
   "description": "Dummy Plugin"
 }
