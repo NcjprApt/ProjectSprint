@@ -10,7 +10,7 @@ const COOKIE_FILE = ".plugin_cookie";
 
 async function startLogin(environment = "prod") {
   let loginUrl;
-  
+
   if (environment === "prod" || environment === "production") {
     loginUrl = LOGIN_URL_PRODUCTION;
   } else if (environment === "sandbox") {
@@ -24,7 +24,8 @@ async function startLogin(environment = "prod") {
 
   const browser = await puppeteer.launch({
     headless: false, // show browser
-    defaultViewport: null
+    defaultViewport: null,
+    channel: "chrome", // use installed Google Chrome
   });
 
   const page = await browser.newPage();
@@ -52,10 +53,10 @@ if (args[0] === "login") {
   startLogin(environment);
 }
 else if (args[0] === "publish") {
-    import("./publish.js");
+  import("./publish.js");
 }
 else if (args[0] === "build") {
-    import("./build.js");
+  import("./build.js");
 
 } else {
   console.log("Unknown command. Try:");
